@@ -150,7 +150,6 @@ iframe {
   .contact  {
     display: flex;
     align-items: center;
-    border: solid;
   }
 
   .contact div {
