@@ -1,0 +1,101 @@
+html {
+  background-color: rgba(68, 220, 231, 0.61);
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  display: flex;
+
+}
+
+.container {
+  box-sizing: "border-box";
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 550px;
+  width: 70%;
+  min-width: 350px;
+  height: 70%;
+  min-height: 600px;
+  background-color: rgba(184, 161, 161, 0.713);
+  border: solid;
+  border-color: rgba(0, 0, 0, 0.664);
+  border-radius: 5px;
+  box-shadow: -1px 1px 10px;
+}
+
+.screen {
+  width: 70%;
+  min-height: 80px;
+  margin: 5% auto;
+  font-size: 40px;
+  text-align: right;
+  border-radius: 10px;
+  background-color: rgba(255, 253, 249, 0.884);
+  border: solid;
+  border-color: rgba(0, 0, 0, 0.80);
+  padding-top: 15px;
+  padding-right: 15px;
+}
+
+input {
+  color: black;
+  outline: none;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: calc(100%/6) calc(100%/6)  calc(100%/6)  calc(100%/6)  calc(100%/6)  calc(100%/6) ;
+  margin: 25px;
+  height: 100%;
+}
+
+.buttons button {
+  margin: 6px;
+  font-size: 25px;
+  box-shadow: -2px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  outline: none;
+}
+
+.number {
+  background-color: rgba(255, 255, 0, 0.562);
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.color1 {
+  background-color: rgb(37, 37, 160);
+  color: white;
+}
+
+.color2 {
+  background-color: rgba(0, 128, 0, 0.768);
+  font-size: 30px !important;
+  font-weight: bold;
+}
+
+.color3 {
+  background-color: red;
+  color: white;
+}
+
+.color4 {
+  background-color: rgba(112, 23, 255, 0.761);
+  font-size: 30px !important;
+}
+
+.sum {
+  grid-column: 5;
+  grid-row: 4/6;
+}
+
+.equal {
+  grid-column: 6;
+  grid-row: 4/6;
+}

@@ -1,0 +1,174 @@
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+  margin: 0;
+  background: url(img/bg.png);
+}
+
+header, footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.897);
+  padding-top: 25px;
+}
+
+footer {
+  padding-bottom: 10px;
+  color: #fff;
+}
+
+main, h1 {
+  line-height: 1.5em;
+}
+
+nav {
+  width: 100%;
+}
+
+header nav ul {
+  display: flex;
+  padding-left: 0;
+  justify-content: space-around;
+  list-style: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header nav ul li a:hover {
+  text-decoration-line: underline;
+  color: #bdbdbd;
+}
+
+.logo {
+  font-size: 42px;
+  color: #c5c0b8;
+  padding: 10px 0 15px 0;
+}
+
+section div {
+  padding: 0 10px;
+}
+
+.project {
+  padding: 0px 10px;
+}
+
+.project img {
+  overflow: hidden;
+}
+
+.about-me {   
+  background-color: #c5c0b8;
+  margin: 75px 0;
+  padding: 75px 0;
+}
+
+main a:link { color: #1c4b41; }
+main a:visited { color: #e48334; }
+main a:hover { color: #403933; }
+main a:active { color: #403933; }
+
+main img {
+  width: 100%;
+  margin-top: 70px;
+  max-width: 600px;
+  margin-bottom: 40px;
+  border-radius: 8px;
+}
+
+.contact {
+  margin: 50px 0;
+}
+
+.contact-extra {
+  margin-top: 50px;
+  font-weight: bold;
+}
+
+form {
+  margin: 55px 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 20px; 
+  line-height: 2em;
+}
+
+textarea {
+  height: 6em;
+  padding: 5px;
+}
+
+button {
+  line-height: 2em;
+  margin-top: 20px;
+  width: fit-content;
+}
+
+iframe {
+  width: 100%;
+  height: 450px;
+}
+
+@media all and (min-width: 700px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 20px;
+  }
+
+  .logo {
+    font-size: 30px;
+  }
+
+  nav {
+    width: fit-content;
+  }
+
+  nav li {
+    margin-right: 30px;
+  }
+
+  section {
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+  }
+
+  .about-me {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .contact  {
+    display: flex;
+    align-items: center;
+    border: solid;
+  }
+
+  .contact div {
+    flex: 2;
+  }
+
+  .contact-extra {
+    text-align: center;
+  }
+
+  .portfolio {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .portfolio h2 {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end:   3;
+  }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Rock Paper Scissors!</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="popup-container">
+      <div class="popup">
+        <p>Thanks for playing!</p>
+        <p>Try again.</p>
+        <button type="button" onclick="reset()">RESET</button>
+      </div>
+    </div>
+    <label class="computer">Computer</label>
+    <div class="container">
+      <div class="options">
+        <div>
+          <img src="img/rock.svg" alt="rock">
+          <p>Rock<p>
+        </div>
+        <div>
+          <img src="img/paper.svg" alt="paper">
+          <p>Paper<p>
+        </div>
+        <div>
+          <img src="img/scissors.svg" alt="scissors">
+          <p>Scissors<p>
+        </div>
+      </div>
+      <div class="vs">
+        <img src="img/vs.svg" alt="VS">
+      </div>
+      <div class="options">
+        <div class="selection" id="rock">
+          <img src="img/rock.svg" alt="rock">
+          <p>Rock<p>
+        </div>
+        <div class="selection" id="paper">
+          <img src="img/paper.svg" alt="paper">
+          <p>Paper<p>
+        </div>
+        <div class="selection" id="scissors">
+          <img src="img/scissors.svg" alt="scissors">
+          <p>Scissors<p>
+        </div>
+      </div>
+    </div>
+    <label class="player">Player</label>
+    <script src="script.js"></script>
+  </body>
+</html>
