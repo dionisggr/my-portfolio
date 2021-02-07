@@ -303,7 +303,7 @@ footer {
   height: 70vh;
   overflow: hidden;
   background-size: cover !important;
-  background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url(/img/background.jpeg) no-repeat center center scroll;
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url(img/background.jpeg) no-repeat center center scroll;
   border-radius: 2px;
 }
 
