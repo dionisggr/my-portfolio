@@ -1,6 +1,6 @@
 # Dionis Gonzalez - Portfolio
 
-### [Live](https://dionisggr.github.io/my-portfolio/)
+### [Live Site](https://dionisggr.github.io/my-portfolio/)
 
 ### About me:
 I am a software engineer, proficient in Javascript, Web APIs and the PERN (PostgreSQL, Express, React, Node) stack.
