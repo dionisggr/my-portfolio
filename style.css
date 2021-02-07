@@ -18,6 +18,10 @@ body {
   background-color: rgba(128, 128, 128, 0.089);
 }
 
+p:not(#contact p) {
+  text-indent: 50px;
+}
+
 section:not(section.masthead) {
   align-self: center;
   max-width: 1400px;
@@ -46,7 +50,7 @@ header {
 header h1 {
   font-size: 3.5vh;
   margin: 0;
-  color: rgb(13, 13, 77);
+  color: rgba(13, 13, 77, 0.87);
 }
 
 header nav ul {
@@ -164,6 +168,7 @@ main section {
 .project .buttons {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 25px;
 }
 
 .project .button {
@@ -200,6 +205,10 @@ main section {
   padding-right: 8px;
   padding-bottom: 3px;
 }
+
+.tools {
+  margin-bottom: 25px;
+}
 /*      END PORTFOLIO      */
 
 /*      CONTACT      */
@@ -215,7 +224,7 @@ main section {
 }
 
 #contact textarea {
-  height: 75px;
+  height: 150px;
 }
 
 #contact .item {
@@ -242,7 +251,7 @@ main section {
 }
 
 #contact button {
-  padding: 10px 25px;
+  padding: 15px 25px;
   width: 150px;
   margin-top: 25px;
   align-self: center;
@@ -276,6 +285,19 @@ main section {
   margin-top: 20px;
 }
 
+div.footer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  font-size: 40px;
+  color: rgb(5, 5, 73);
+  width: 100%;
+  max-width: 300px;
+}
+
+div.footer i + i {
+  margin-left: 25px;
+}
 /*      END CONTACT     */
 
 /*      FOOTER      */
@@ -285,9 +307,9 @@ footer {
   align-items: center;
   height: 30px;
   background-color: rgba(192, 196, 209, 0.541);
-  margin-top: 50px;
+  margin-top: 30px;
   font-size: 16px;
-  color: rgba(14, 14, 112, 0.829);
+  color: rgb(5, 5, 73);
   font-weight: bold;
 }
 /*      END FOOTER      */
@@ -311,7 +333,7 @@ footer {
   font-style: normal;
   font-weight: bold;
   color: #eee;
-  font-size: 9vmin;
+  font-size: 8.5vmin;
   letter-spacing: 0.03em;
   line-height: 1;
   text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8);
@@ -323,7 +345,7 @@ footer {
 
 /*  -----    MOBILE STYLING    -----  */
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 850px) {
   /*      GLOBAL      */
   section:not(section.masthead) {
     width: 70%;
@@ -331,8 +353,8 @@ footer {
   }
 
   hr {
-    margin-top: 75px;
-    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-bottom: 35px;
   }
   /*      END GLOBAL      */
 
@@ -357,11 +379,11 @@ footer {
   .about-me {
     flex-direction: row-reverse;
     align-items: center;
-    justify-content: flex-end;
     justify-content: space-between;
   }
 
   .about-me img {
+    display: inline-block;
     max-width: 375px;
     min-width: 325px;
   }
@@ -391,6 +413,10 @@ footer {
   /*      ABOUT ME      */
   .about-me {
     flex-direction: column;
+  }
+
+  .about-me .info {
+    margin: 0;
   }
   /*      END OF ABOUT ME      */
   
