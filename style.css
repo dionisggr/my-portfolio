@@ -184,6 +184,7 @@ main section {
   color: white;
   font-size: 16px;
   margin-right: 8px;
+  cursor: pointer;
 }
 
 .project .button:hover {
@@ -261,6 +262,7 @@ main section {
   color: white;
   font-size: 14px;
   letter-spacing: 1px;
+  cursor: pointer;
 }
 
 #contact button:active {
@@ -297,6 +299,13 @@ div.footer {
 
 div.footer i + i {
   margin-left: 25px;
+} 
+
+div.footer a {
+  color: rgb(9, 1, 117);
+}
+div.footer a:visited {
+  color: rgb(9, 1, 117);
 }
 /*      END CONTACT     */
 
