@@ -7,6 +7,8 @@
   <title>Dionis Gonzalez Ramirez | Software Developer | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com"><link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -17,13 +19,33 @@
 
 <body>
   <header>
-    <h1 class="logo">Dionis González Ramírez</h1>
+    <h1 class="logo">Dionis Gonzalez</h1>
     <nav>
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="https://github.com/dionisggr" target="_blank">GitHub</a></li>
+        <li>
+          <a href="#about">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <span>About</span>
+        </a>
+        </li>
+        <li>
+          <a href="#skills">
+            <i class="fa fa-cog" aria-hidden="true"></i>
+            <span>Skills</span>
+          </a>
+        </li>
+        <li>
+          <a href="#projects">
+            <i class="fa fa-laptop"></i>
+            <span>Projects</span>
+          </a>
+        </li>
+        <li>
+          <a href="#contact">
+            <i class="fa fa-wpforms" aria-hidden="true"></i>
+            <span>Contact</span>
+          </a>
+        </li>
       </ul>
     </nav>
   </header>
@@ -31,21 +53,22 @@
   <main>
     <section class="masthead" aria-label="Image Description">
       <h2>
-        <span>Determination.</span> <span>Curiosity.</span> <span>Drive.</span>
+        <span>Determination.</span>
+        <span>Curiosity.</span>
+        <span>Drive.</span>
       </h2>
     </section>
 
     <section class="about-me" id="about">
       <img src="img/dionis-gonzalez-picture.jfif" alt="Dionis Gonzalez Ramirez picture" class="image-enhanced">
       <div class="info">
-        <h2>About me</h2>
+        <h2>About</h2>
         <p>Since college, I became intrigued about applications and their advantage to businesses in general.</p>
         <p>Throughout my professional experience in sales, customer service and student advising, I thoroughly enjoyed
           helping people get the most out of the technologies available to them for their daily challenges and
           responsibilities, breaking them down into simpler steps.</p>
-        <p>Outside of coding, I really enjoy learning and exploring new trends, playing the piano, and catching up on modern
-          entertainment, among too many other things.
-        <p>As a student soon to graduate from <a href="http://thinkful.com" target="_blank">Thinkful</a>, I'm excited to apply my
+        <p>Outside of coding, I like to relax my mind playing the piano and catching up on interesting topics and trends.
+        <p>As a recent graduate from <a href="http://thinkful.com" target="_blank">Thinkful</a>, I'm excited to apply my
           developed skills at a professional setting where I can help improve the general digital footprint and
           operations of the business.</p>
       </div>
@@ -73,7 +96,7 @@
       </div>
       <div class="skill-icon">
         <img src="img/icons/react.svg" alt="React.js logo" />
-        <label>React</label>
+        <label>React.js</label>
       </div>
       <div class="skill-icon">
         <img src="img/icons/nodejs.svg" alt="Node.js logo" />
@@ -116,10 +139,6 @@
         <label>GitHub</label>
       </div>
       <div class="skill-icon">
-        <img src="img/icons/cypress.svg" alt="Cypress logo" />
-        <label>Cypress</label>
-      </div>
-      <div class="skill-icon">
         <img src="img/icons/npm.svg" alt="NPM logo" />
         <label>npm</label>
       </div>
@@ -127,36 +146,69 @@
 
     <hr />
 
-    <section id="portfolio">
-      <h2>Portfolio</h2>
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="project">
+        <a href="https://flickshare-client.vercel.app/" target="_blank">
+          <img src="img/flickshare.png" alt="FlickShare App">
+        </a>
+        <div class="project-info">
+          <h3>FlickShare</h3>
+          <p>
+            The Flickshare App is directed for anyone who really has a hard time finding suggestions on 
+            what to watch next! The app allows users to create an account and custom lists of movie interests, 
+            which may then be used to generated a list of suggestions and store them for coming back to it later.
+          </p>
+          <div class="tools"><small>
+              <span>Javascript</span><span>React.js</span><span>CSS3</span>
+              <span>Cypress</span><span>API fetches</span><span>Node.js</span>
+              <span>Express.js</span><span>Knex.js</span><span>PostgreSQL</span>
+              <span>Mocha</span><span>Chai</span><span>Supertest</span>
+              <span>Nodemon</span><span>Postgrator</span><span>JWT</span>
+            </small></div>
+          <div class="buttons">
+            <a href="https://flickshare-client.vercel.app/" target="_blank" class="button">
+              <i class="fa fa-laptop" aria-hidden="true"></i>
+              Demo
+            </a>
+            <a href="https://github.com/dionisggr/flickshare-client/" target="_blank" class="button">
+              <i class="fa fa-github" aria-hidden="true"></i>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
 
       <div class="project">
         <a href="https://spaced-repetition-blue.vercel.app/" target="_blank">
           <img src="img/spaced-repetition.png" alt="LangCards App: Spaced Repetition Capstone">
         </a>
-        <h3>LangCards</h3>
-        <p>
-          The app allows users to train in Spanish for common words using the spaced repetition technique,
-          and slowly scale up to more complex but less frequently used words. It allows for users to keep track
-          of the last word in their history, and their score progress. It will further keep history of each time
-          the user has answered the translation correctly and incorrectly.
-        </p>
-        <div class="tools"><small>
-            <span>Javascript</span><span>React</span><span>CSS3</span>
-            <span>Cypress</span><span>API fetches</span><span>Node.js</span>
-            <span>Express.js</span><span>Knex.js</span><span>PostgreSQL</span>
-            <span>Mocha</span><span>Chai</span><span>Supertest</span>
-            <span>Nodemon</span><span>Postgrator</span><span>JWT</span>
-          </small></div>
-        <div class="buttons">
-          <a href="https://spaced-repetition-blue.vercel.app/" target="_blank" class="button">
-            <i class="fa fa-laptop" aria-hidden="true"></i>
-            Demo
-          </a>
-          <a href="https://github.com/dionisggr/spaced-repetition/" target="_blank" class="button">
-            <i class="fa fa-github" aria-hidden="true"></i>
-            GitHub
-          </a>
+        <div class="project-info">
+          <h3>LangCards</h3>
+          <p>
+            The app allows users to train in Spanish for common words using the spaced repetition technique,
+            and slowly scale up to more complex but less frequently used words. It allows for users to keep track
+            of the last word in their history, and their score progress. It will further keep history of each time
+            the user has answered the translation correctly and incorrectly.
+          </p>
+          <div class="tools"><small>
+              <span>Javascript</span><span>React.js</span><span>CSS3</span>
+              <span>Cypress</span><span>API fetches</span><span>Node.js</span>
+              <span>Express.js</span><span>Knex.js</span><span>PostgreSQL</span>
+              <span>Mocha</span><span>Chai</span><span>Supertest</span>
+              <span>Nodemon</span><span>Postgrator</span><span>JWT</span>
+            </small></div>
+          <div class="buttons">
+            <a href="https://spaced-repetition-blue.vercel.app/" target="_blank" class="button">
+              <i class="fa fa-laptop" aria-hidden="true"></i>
+              Demo
+            </a>
+            <a href="https://github.com/dionisggr/spaced-repetition/" target="_blank" class="button">
+              <i class="fa fa-github" aria-hidden="true"></i>
+              GitHub
+            </a>
+          </div>
         </div>
       </div>
 
@@ -164,29 +216,31 @@
         <a href="https://devmap.vercel.app/" target="_blank">
           <img src="img/devmap.png" alt="DevMap App">
         </a>
-        <h3>DevMap</h3>
-        <p>
-          A simple meeting point for software developers to collaborate on other projects.
-          The app allows software development teams to manage life-cycles,
-          monitor deadlines, and update details specific details for software development projects,
-          features and bugs.
-        </p>
-        <div class="tools"><small>
-            <span>Javascript</span><span>React</span><span>CSS3</span><span>HTML5</span>
-            <span>Cypress</span><span>API fetches</span><span>Javascript</span>
-            <span>Node.js</span><span>Express.js</span><span>Knex.js</span>
-            <span>PostgreSQL</span><span>Mocha</span><span>Chai</span>
-            <span>Supertest</span><span>Nodemon</span><span>JWT</span>
-          </small></div>
-        <div class="buttons">
-          <a href="https://devmap.vercel.app/" target="_blank" class="button">
-            <i class="fa fa-laptop" aria-hidden="true"></i>
-            Demo
-          </a>
-          <a href="https://github.com/dionisggr/devmap" target="_blank" class="button">
-            <i class="fa fa-github" aria-hidden="true"></i>
-            GitHub
-          </a>
+        <div class="project-info">
+          <h3>DevMap</h3>
+          <p>
+            A simple meeting point for software developers to collaborate on other projects.
+            The app allows software development teams to manage life-cycles,
+            monitor deadlines, and update details specific details for software development projects,
+            features and bugs.
+          </p>
+          <div class="tools"><small>
+              <span>Javascript</span><span>React.js</span><span>CSS3</span><span>HTML5</span>
+              <span>Cypress</span><span>API fetches</span><span>Javascript</span>
+              <span>Node.js</span><span>Express.js</span><span>Knex.js</span>
+              <span>PostgreSQL</span><span>Mocha</span><span>Chai</span>
+              <span>Supertest</span><span>Nodemon</span><span>JWT</span>
+            </small></div>
+          <div class="buttons">
+            <a href="https://devmap.vercel.app/" target="_blank" class="button">
+              <i class="fa fa-laptop" aria-hidden="true"></i>
+              Demo
+            </a>
+            <a href="https://github.com/dionisggr/devmap" target="_blank" class="button">
+              <i class="fa fa-github" aria-hidden="true"></i>
+              GitHub
+            </a>
+          </div>
         </div>
       </div>
 
@@ -194,27 +248,29 @@
         <a href="https://petful-client-pink.vercel.app/" target="_blank">
           <img src="img/petful.png" alt="Petful App">
         </a>
-        <h3>Petful</h3>
-        <p>
-          This app allows users adopt cats and dogs from queue list. The users will add themselves
-          to the waiting list, wait for their turn, and select a dog, a cat, or both from the active selections.
-          In future scope, it pretends to add user registration, personalized adoption history lists, an overall
-          adoption history list, and the ability to add, edit and delete projects and users from the queue.
-        </p>
-        <div class="tools"><small>
-            <span>HTML</span><span>CSS3</span><span>Javascript</span>
-            <span>React</span><span>API fetches</span><span>Queues</span>
-            <span>Node.js</span><span>Express.js</span>
-          </small></div>
-        <div class="buttons">
-          <a href="https://petful-client-pink.vercel.app/" target="_blank" class="button">
-            <i class="fa fa-laptop" aria-hidden="true"></i>
-            Demo
-          </a>
-          <a href="https://github.com/dionisggr/petful-client/" target="_blank" class="button">
-            <i class="fa fa-github" aria-hidden="true"></i>
-            GitHub
-          </a>
+        <div class="project-info">
+          <h3>Petful</h3>
+          <p>
+            This app allows users adopt cats and dogs from queue list. The users will add themselves
+            to the waiting list, wait for their turn, and select a dog, a cat, or both from the active selections.
+            In future scope, it pretends to add user registration, personalized adoption history lists, an overall
+            adoption history list, and the ability to add, edit and delete projects and users from the queue.
+          </p>
+          <div class="tools"><small>
+              <span>HTML</span><span>CSS3</span><span>Javascript</span>
+              <span>React.js</span><span>API fetches</span><span>Queues</span>
+              <span>Node.js</span><span>Express.js</span>
+            </small></div>
+          <div class="buttons">
+            <a href="https://petful-client-pink.vercel.app/" target="_blank" class="button">
+              <i class="fa fa-laptop" aria-hidden="true"></i>
+              Demo
+            </a>
+            <a href="https://github.com/dionisggr/petful-client/" target="_blank" class="button">
+              <i class="fa fa-github" aria-hidden="true"></i>
+              GitHub
+            </a>
+          </div>
         </div>
       </div>
 
@@ -222,28 +278,30 @@
         <a href="https://noteful-sigma-black.vercel.app/" target="_blank">
           <img src="img/noteful.png" alt="Noteful App">
         </a>
-        <h3>Noteful</h3>
-        <p>
-          A simple API for the Noteful App for all HTTP-related requests, simulating a note manager, which contains several endpoints for managing folders and notes. The folder
-          data only includes
-          folder name. The note data includes a note name, folder ID where it belongs to and date modified.
-        </p>
-        <div class="tools"><small>
-            <span>HTML5</span><span>CSS3</span><span>Javascript</span>
-            <span>React</span><span>Javascript</span><span>Node.js</span>
-            <span>Express.js</span><span>Knex.js</span><span>PostgreSQL</span>
-            <span>Mocha</span><span>Chai</span><span>PostgreSQL</span>
-            <span>Morgan</span><span>XSS Security</span><span>API requests</span>
-          </small></div>
-        <div class="buttons">
-          <a href="https://noteful-sigma-black.vercel.app/" target="_blank" class="button">
-            <i class="fa fa-laptop" aria-hidden="true"></i>
-            Demo
-          </a>
-          <a href="https://github.com/dionisggr/noteful/" target="_blank" class="button">
-            <i class="fa fa-github" aria-hidden="true"></i>
-            GitHub
-          </a>
+        <div class="project-info">
+          <h3>Noteful</h3>
+          <p>
+            A simple API for the Noteful App for all HTTP-related requests, simulating a note manager, which contains several endpoints for managing folders and notes. The folder
+            data only includes
+            folder name. The note data includes a note name, folder ID where it belongs to and date modified.
+          </p>
+          <div class="tools"><small>
+              <span>HTML5</span><span>CSS3</span><span>Javascript</span>
+              <span>React.js</span><span>Javascript</span><span>Node.js</span>
+              <span>Express.js</span><span>Knex.js</span><span>PostgreSQL</span>
+              <span>Mocha</span><span>Chai</span><span>PostgreSQL</span>
+              <span>Morgan</span><span>XSS Security</span><span>API requests</span>
+            </small></div>
+          <div class="buttons">
+            <a href="https://noteful-sigma-black.vercel.app/" target="_blank" class="button">
+              <i class="fa fa-laptop" aria-hidden="true"></i>
+              Demo
+            </a>
+            <a href="https://github.com/dionisggr/noteful/" target="_blank" class="button">
+              <i class="fa fa-github" aria-hidden="true"></i>
+              GitHub
+            </a>
+          </div>
         </div>
       </div>
 
@@ -251,27 +309,29 @@
         <a href="https://dionisggr.github.io/bookmark-app/" target="_blank">
           <img src="img/bookmark-app.png" alt="Bookmark Manager App">
         </a>
-        <h3>Bookmark Manager</h3>
-        <p>
-          A simple bookmark manager made for the single purpose of practicing API calls and JQuery. Its purpose its to
-          mimic a personal handler for bookmark names, URLs, descriptions and ratings. Server implementation was provided
-          by boot camp host Thinkful as a general JSON web server.
-        </p>
-        <div class="tools"><small>
-            <span>HTML5</span><span>CSS3</span><span>Javascript</span>
-            <span>JQuery</span><span>API requests</span><span>npm</span>
-            <span>Node.js</span><span>Express.js</span><span>Mocha</span>
-            <span>Chai</span><span>Supertest</span><span>Webpack</span>
-          </small></div>
-        <div class="buttons">
-          <a  href="https://dionisggr.github.io/bookmark-app/" target="_blank" class="button">
-            <i class="fa fa-laptop" aria-hidden="true"></i>
-            Demo
-          </a>
-          <a href="https://github.com/dionisggr/bookmark-app/" target="_blank" class="button">
-            <i class="fa fa-github" aria-hidden="true"></i>
-            GitHub
-          </a>
+        <div class="project-info">
+          <h3>Bookmark Manager</h3>
+          <p>
+            A simple bookmark manager made for the single purpose of practicing API calls and JQuery. Its purpose its to
+            mimic a personal handler for bookmark names, URLs, descriptions and ratings. Server implementation was provided
+            by boot camp host Thinkful as a general JSON web server.
+          </p>
+          <div class="tools"><small>
+              <span>HTML5</span><span>CSS3</span><span>Javascript</span>
+              <span>JQuery</span><span>API requests</span><span>npm</span>
+              <span>Node.js</span><span>Express.js</span><span>Mocha</span>
+              <span>Chai</span><span>Supertest</span><span>Webpack</span>
+            </small></div>
+          <div class="buttons">
+            <a  href="https://dionisggr.github.io/bookmark-app/" target="_blank" class="button">
+              <i class="fa fa-laptop" aria-hidden="true"></i>
+              Demo
+            </a>
+            <a href="https://github.com/dionisggr/bookmark-app/" target="_blank" class="button">
+              <i class="fa fa-github" aria-hidden="true"></i>
+              GitHub
+            </a>
+          </div>
         </div>
       </div>
 
@@ -279,26 +339,28 @@
         <a href="https://laptop-customizer-mauve.vercel.app/" target="_blank">
           <img src="img/laptop-customizer.png" alt="Laptop Customizer App">
         </a>
-        <h3>Laptop Customizer</h3>
-        <p>
-          A simple laptop customizer app, made for the purpose of providing a sort of store Cart template for users to
-          manage computers parts (or other products), and have the Cart and total be updated in real-time as you select different
-          products. The options provided are limited as the scope of the application was for practice, but is set up in a way to
-          easily scale further.
-        </p>
-        <div class="tools"><small>
-            <span>React</span><span>Javascript</span>
-            <span>CSS3</span><span>npm</span>
-          </small></div>
-        <div class="buttons">
-          <a href="https://github.com/dionisggr/laptop-customizer/" target="_blank" class="button">
-            <i class="fa fa-laptop" aria-hidden="true"></i>
-            Demo
-          </a>
-          <a href="https://laptop-customizer-mauve.vercel.app/" target="_blank" class="button">
-            <i class="fa fa-github" aria-hidden="true"></i>
-            GitHub
-          </a>
+        <div class="project-info">
+          <h3>Laptop Customizer</h3>
+          <p>
+            A simple laptop customizer app, made for the purpose of providing a sort of store Cart template for users to
+            manage computers parts (or other products), and have the Cart and total be updated in real-time as you select different
+            products. The options provided are limited as the scope of the application was for practice, but is set up in a way to
+            easily scale further.
+          </p>
+          <div class="tools"><small>
+              <span>React.js</span><span>Javascript</span>
+              <span>CSS3</span><span>npm</span>
+            </small></div>
+          <div class="buttons">
+            <a href="https://github.com/dionisggr/laptop-customizer/" target="_blank" class="button">
+              <i class="fa fa-laptop" aria-hidden="true"></i>
+              Demo
+            </a>
+            <a href="https://laptop-customizer-mauve.vercel.app/" target="_blank" class="button">
+              <i class="fa fa-github" aria-hidden="true"></i>
+              GitHub
+            </a>
+          </div>
         </div>
       </div>
 
@@ -306,28 +368,30 @@
         <a href="https://google-book-search-opal.vercel.app/" target="_blank">
           <img src="img/google-book-search.png" alt="Google Book Search App">
         </a>
-        <h3>Google Book Search</h3>
-        <p>
-          A simple book search engine from Google's database, made for the purpose of facilitating the verification of
-          price, availability and general data from existing books. <br>
-          The app contains a Print Type filter to select between Books and Magazines, or both, and a Book Type filter to
-          select between: Previewable, Full-Text, E-Books, Free E-Books and Paid E-Books, or all. The data returned includes a plethora
-          of categories, but the only ones used are: book image (smaller size), book name, authors, price, availability and
-          description.
-        </p>
-        <div class="tools"><small>
-            <span>React</span><span>Javascript</span>
-            <span>CSS3</span><span>API requests</span><span>npm</span>
-          </small></div>
-        <div class="buttons">
-          <a href="https://google-book-search-opal.vercel.app/" target="_blank" class="button">
-            <i class="fa fa-laptop" aria-hidden="true"></i>
-            Demo
-          </a>
-          <a href="https://github.com/dionisggr/google-book-search/" target="_blank" class="button">
-            <i class="fa fa-github" aria-hidden="true"></i>
-            GitHub
-          </a>
+        <div class="project-info">
+          <h3>Google Book Search</h3>
+          <p>
+            A simple book search engine from Google's database, made for the purpose of facilitating the verification of
+            price, availability and general data from existing books. <br>
+            The app contains a Print Type filter to select between Books and Magazines, or both, and a Book Type filter to
+            select between: Previewable, Full-Text, E-Books, Free E-Books and Paid E-Books, or all. The data returned includes a plethora
+            of categories, but the only ones used are: book image (smaller size), book name, authors, price, availability and
+            description.
+          </p>
+          <div class="tools"><small>
+              <span>React.js</span><span>Javascript</span>
+              <span>CSS3</span><span>API requests</span><span>npm</span>
+            </small></div>
+          <div class="buttons">
+            <a href="https://google-book-search-opal.vercel.app/" target="_blank" class="button">
+              <i class="fa fa-laptop" aria-hidden="true"></i>
+              Demo
+            </a>
+            <a href="https://github.com/dionisggr/google-book-search/" target="_blank" class="button">
+              <i class="fa fa-github" aria-hidden="true"></i>
+              GitHub
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -336,12 +400,9 @@
 
     <section class="contact" id="contact">
       <div class="item">
-        <h2>Contact Me!</h2>
+        <h2>Contact</h2>
         <p>I'm interested in helping develop new ideas! Feel free to contact or follow me at:</p>
-        <ol>
-          <li><a href="https://www.linkedin.com/in/dionis-gonzalez-ramirez/" target="_blank">LinkedIn</a></li>
-          <li><a href="https://github.com/dionisggr" target="_blank">GitHub</a></li>
-        </ol>
+
         <form action="https://formspree.io/f/mzbkegkr" method="POST">
           <label for="user-name">Name:</label>
           <input id="user-name" type="text" name="name" required>
@@ -351,10 +412,6 @@
           <textarea id="user-message" name="message" required></textarea>
           <button type="submit">Submit</button>
         </form>
-      </div>
-      <div class="item contact-extra">
-        <p>Phone #: <a href="tel:787-225-3914" target="_blank">787.225.3914</a></p>
-        <p>Email: <a href="mailto:dionisggr@gmail.com?subject=About%20your%20portfolio..." target="_blank">dionisggr@gmail.com</a></p>
       </div>
       <div class="footer">
         <a href="mailto:dionisggr@gmail.com" target="_blank" aria-label="email"><i class="fa fa-envelope" aria-hidden="true"></i></a>

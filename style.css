@@ -18,13 +18,9 @@ body {
   background-color: rgba(128, 128, 128, 0.089);
 }
 
-p:not(#contact p) {
-  text-indent: 50px;
-}
-
 section:not(section.masthead) {
   align-self: center;
-  max-width: 1400px;
+  max-width: 1200px;
 }
 
 hr {
@@ -42,15 +38,25 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  height: 85px;
-  background-color: rgba(128, 128, 128, 0);
+  height: 28vw;
+  max-height: 100px;
+  background-color: rgba(255, 255, 255, 0.863);
   padding: 8px 0 5px 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 header h1 {
-  font-size: 3.5vh;
+  font-size: 7vw;
   margin: 0;
-  color: rgba(13, 13, 77, 0.87);
+  color: rgb(13, 37, 117);
+  font-family: 'Montserrat', sans-serif;
+}
+
+header nav {
+  width: 100%;
+  max-width: 600px;
 }
 
 header nav ul {
@@ -58,18 +64,20 @@ header nav ul {
   justify-content: space-around;
   list-style-type: none;
   padding-left: 0;
+  padding: 0 25px;
   margin: 0;
+  min-width: 100%;
 }
 
 header a {
   text-decoration: none;
-  color: rgb(13, 13, 77);
+  color: rgb(13, 37, 117);
   font-weight: bolder;
-  font-size: 2vh;
+  font-size: 24px;
 }
 
-header nav li + li {
-  padding-left: 20px;
+header a span {
+  display: none;
 }
 /*      END HEADER     */
 
@@ -81,17 +89,12 @@ main {
   flex-direction: column;
 }
 
-main h2 span {
-  display: block;
-}
-
 main h2 span + span {
-  margin-top: 15%;
+  margin-left: 5px;
 }
 
 main section {
-  padding: 0 25px;
-  font-size: 18px;
+  width: 90%;
 }
 /*      END MAIN      */
 
@@ -99,22 +102,44 @@ main section {
 /*      ABOUT ME      */
 .about-me {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px auto;
   margin-top: 55px;
   line-height: 1.5em;
 }
 
-.about-me img {
+.about-me .info {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  border: solid 1px rgba(14, 14, 112, 0.829);
-  border-radius: 15px;
-  margin-bottom: 25px;
 }
 
-#portfolio h2 {
+.about-me p {
+  align-self: center;
+}
+
+.about-me img {
+  display: block;
+  width: 80vw;
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 1px rgba(14, 14, 112, 0.829);
+  border-radius: 15px;
   margin-bottom: 50px;
 }
 
-#portfolio img {
+.about-me p {
+  max-width: 800px;
+  width: 100%;
+} 
+
+#projects h2 {
+  margin-bottom: 50px;
+}
+
+#projects img {
   width: 100%;
 }
 /*      END ABOUT ME      */
@@ -143,13 +168,15 @@ main section {
 }
 /*      END OF SKILLS      */
 
-/*      PORTFOLIO      */
-#portfolio {
+/*      projects      */
+#projects {
   display: flex;
   flex-direction: column;
 }
 
 .project {
+  display: flex;
+  flex-direction: column;
   max-width: 1000px;
   align-self: center;
 }
@@ -162,7 +189,7 @@ main section {
   display: inline-block;
   border: solid 1px rgba(0, 0, 0, 0.199);
   padding: 3px;
-  margin: 3px 2px;
+  margin: 3px 3px;
 }
 
 .project .buttons {
@@ -177,14 +204,16 @@ main section {
   align-items: center;
   width: 100px;
   height: 2.8em;
-  background-color: rgb(9, 1, 117);
+  background-color: rgb(13, 37, 117);
   border-width: 1px;
   border-radius: 3px;
   outline: none;
   color: white;
-  font-size: 16px;
+  /* font-size: 16px; */
   margin-right: 8px;
   cursor: pointer;
+  text-decoration: none;
+  padding-top: 3px;
 }
 
 .project .button:hover {
@@ -198,7 +227,7 @@ main section {
 .project img {
   border-radius: 5px;
   border: solid 1px rgba(14, 14, 112, 0.322);
-
+  /* max-width: 500px; */
 }
 
 .project i {
@@ -210,14 +239,23 @@ main section {
 .tools {
   margin-bottom: 25px;
 }
-/*      END PORTFOLIO      */
+
+.tools small {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tools span {
+  width: fit-content;
+}
+/*      END projects      */
 
 /*      CONTACT      */
 #contact {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: 90%;
 }
 
 #contact input {
@@ -252,15 +290,16 @@ main section {
 }
 
 #contact button {
-  padding: 15px 25px;
+  padding: 12px 25px;
   width: 150px;
-  margin-top: 25px;
+  margin-top: 50px;
+  margin-bottom: 100px;
   align-self: center;
   border: solid 1px rgba(0, 0, 0, 0.582);
   border-radius: 5px;
-  background-color: rgb(9, 1, 117);
+  background-color: rgb(13, 37, 117);
   color: white;
-  font-size: 14px;
+  /* font-size: 14px; */
   letter-spacing: 1px;
   cursor: pointer;
 }
@@ -291,8 +330,8 @@ div.footer {
   display: flex;
   justify-content: space-around;
   margin-top: 50px;
-  font-size: 40px;
-  color: rgb(5, 5, 73);
+  /* font-size: 40px; */
+  color: rgb(13, 37, 117);
   width: 100%;
   max-width: 300px;
 }
@@ -302,10 +341,11 @@ div.footer i + i {
 } 
 
 div.footer a {
-  color: rgb(9, 1, 117);
+  color: rgb(13, 37, 117);
+
 }
 div.footer a:visited {
-  color: rgb(9, 1, 117);
+  color: rgb(13, 37, 117);
 }
 /*      END CONTACT     */
 
@@ -317,7 +357,7 @@ footer {
   height: 30px;
   background-color: rgba(192, 196, 209, 0.541);
   margin-top: 30px;
-  font-size: 16px;
+  /* font-size: 16px; */
   color: rgb(5, 5, 73);
   font-weight: bold;
 }
@@ -326,38 +366,75 @@ footer {
 /*      HERO IMAGE      */   
 .masthead {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-end;
   flex-direction: column;
   text-align: center;
   width: 100%;
-  height: 70vh;
+  height: 140vw;
   overflow: hidden;
   background-size: cover !important;
   background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url(img/background.jpeg) no-repeat center center scroll;
-  border-radius: 2px;
+  border: solid 1px rgba(0, 0, 255, 0.199);
+  box-shadow: 0 2px 10px rgba(0, 0, 255, 0.267);
 }
 
 .masthead h2 {
   font-style: normal;
   font-weight: bold;
   color: #eee;
-  font-size: 8.5vmin;
-  letter-spacing: 0.03em;
+  font-size: 4vmin;
+  letter-spacing: 0.13em;
   line-height: 1;
   text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8);
-  margin-bottom: 40px;
+  margin-bottom: 10vh;
+  padding-right: 10px;
 }
 /*      END HERO IMAGE      */
 
 
+@media only screen and (min-width: 350px) {
+  /*      HEADER      */
+    header a {
+      font-size: 4.2vw;
+    }
 
-/*  -----    MOBILE STYLING    -----  */
+    header a span {
+      display: inline-block;
+    }
 
-@media all and (min-width: 850px) {
+    header nav ul {
+      padding: 0 10px;
+    }
+  /*      END OF HEADER      */
+}
+
+@media only screen and (min-width: 500px) {
+  /*      HEADER      */
+  header {
+    min-height: 125px;
+  }
+
+  header h1 {
+    font-size: 4vh;
+  }
+
+  header a {
+    font-size: 2.5vh;
+  }
+  /*      HEADER      */
+
+  /*      HERO IMAGE      */
+  .masthead {
+    height: 75vh;
+  }
+  /*      END OF HERO IMAGE      */
+
+}
+
+@media only screen and (min-width: 768px) {
   /*      GLOBAL      */
   section:not(section.masthead) {
-    width: 70%;
     align-self: center;
   }
 
@@ -367,40 +444,42 @@ footer {
   }
   /*      END GLOBAL      */
 
+  /*      HERO IMAGE      */
+    .masthead {
+      padding: 0 8vw;
+    }
+
+    .masthead h2 {
+      font-size: 24px;
+    }
+  /*      END HERO IMAGE      */
+
   /*      HEADER      */
   header {
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 50px 0 15px;
+    padding: 0 2vw 0 1vw;
     min-height: 85px;
   }
 
   header h1 {
-    font-size: 3.3vh;
+    font-size: 3.5vh;
+    min-width: fit-content;
+    margin-right: 25px;
+  }
+  
+  header nav {
+    width: 60%;
   }
 
   header nav ul {
     width: 350px;
   }
+
+  header a {
+    font-size: 2.5vmin;
+  }
   /*      END HEADER      */
-
-  /*      ABOUT ME      */
-  .about-me {
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .about-me img {
-    display: inline-block;
-    max-width: 375px;
-    min-width: 325px;
-  }
-
-  .info {
-    margin-right: 75px;
-  }
-  /*      END ABOUT ME      */
 
   /*      SKILLS      */
   #skills {
@@ -417,16 +496,83 @@ footer {
   /*      END OF CONTACT      */
 }
 
+@media only screen and (min-width: 1000px) {
+  /*      HEADER      */
+    header nav {
+      margin-top: 15px;
+    }
+  /*      END OF HEADER      */
 
-@media all and (max-width: 1000px) {
-  /*      ABOUT ME      */
-  .about-me {
+  /*      PROJECT      */
+  .project {
+    flex-direction: row;
+    align-items: center;
+    font-size: 16px;
+    min-width: 100%;
+  }
+
+  .project a {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    min-width: 50%;
   }
 
-  .about-me .info {
-    margin: 0;
+  .buttons a {
+    flex-direction: row;
   }
-  /*      END OF ABOUT ME      */
+
+  .project .buttons {
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+    width: 225px;
+    height: 100px;
+  }
+
+  .buttons a {
+    border: solid green;
+    min-height: 50px;
+    font-size: 16px;
+  }
+
+  .project-info {
+    margin-left: 3vw;
+    margin-top: 40px;
+  }
+
+  .project a:not(.buttons a) {
+    height: 275px;
+  }
+
+  .project a img {
+    min-height: 350px;
+  }
+  /*      END OF PROJECT      */
+
+  /*      HERO IMAGE      */
+    .masthead h2 {
+      font-size: 4vmin;
+    }
+  /*      END OF HERO IMAGE      */
+
+}
+
+@media only screen and (min-width: 1200px) {
+    /*      ABOUT ME      */
+    .about-me {
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: space-between;
+    }
   
+    .about-me img {
+      display: inline-block;
+      max-width: 375px;
+      min-width: 325px;
+    }
+  
+    .info {
+      margin-right: 75px;
+    }
+    /*      END ABOUT ME      */
 }
