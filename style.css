@@ -204,7 +204,7 @@ main section {
   align-items: center;
   width: 100px;
   height: 2.8em;
-  background-color: rgb(13, 37, 117);
+  background-color: rgb(2, 48, 199);
   border-width: 1px;
   border-radius: 3px;
   outline: none;
@@ -226,8 +226,8 @@ main section {
 
 .project img {
   border-radius: 5px;
-  border: solid 1px rgba(14, 14, 112, 0.322);
-  /* max-width: 500px; */
+  border: solid 1px rgb(2, 48, 199);
+
 }
 
 .project i {
