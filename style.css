@@ -330,10 +330,11 @@ div.footer {
   display: flex;
   justify-content: space-around;
   margin-top: 50px;
-  /* font-size: 40px; */
+  font-size: 40px;
   color: rgb(13, 37, 117);
   width: 100%;
   max-width: 300px;
+  margin-bottom: 25px;
 }
 
 div.footer i + i {
