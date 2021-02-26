@@ -149,6 +149,7 @@ main section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  justify-content: center;
 }
 
 #skills h2 {
@@ -166,6 +167,8 @@ main section {
   flex-direction: column;
   align-items: center;
 }
+
+
 /*      END OF SKILLS      */
 
 /*      projects      */
@@ -209,7 +212,6 @@ main section {
   border-radius: 3px;
   outline: none;
   color: white;
-  /* font-size: 16px; */
   margin-right: 8px;
   cursor: pointer;
   text-decoration: none;
