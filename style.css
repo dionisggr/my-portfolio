@@ -166,6 +166,7 @@ main section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-basis: calc(100% / 8);
 }
 
 
