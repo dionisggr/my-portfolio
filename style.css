@@ -1,4 +1,3 @@
-/*      GLOBAL      */
 * {
   box-sizing: border-box;
 }
@@ -29,10 +28,7 @@ hr {
   margin-top: 20px;
   margin-bottom: 25px;
 }
-/*      END GLOBAL      */
 
-
-/*      HEADER      */
 header {
   display: flex;
   flex-direction: column;
@@ -79,10 +75,6 @@ header a {
 header a span {
   display: none;
 }
-/*      END HEADER     */
-
-
-/*      MAIN      */
 
 main {
   display: flex;
@@ -96,10 +88,7 @@ main h2 span + span {
 main section {
   width: 90%;
 }
-/*      END MAIN      */
 
-
-/*      ABOUT ME      */
 .about-me {
   display: flex;
   flex-direction: column;
@@ -142,9 +131,7 @@ main section {
 #projects img {
   width: 100%;
 }
-/*      END ABOUT ME      */
 
-/*      SKILLS      */
 #skills {
   display: flex;
   flex-wrap: wrap;
@@ -169,10 +156,6 @@ main section {
   flex-basis: calc(100% / 8);
 }
 
-
-/*      END OF SKILLS      */
-
-/*      projects      */
 #projects {
   display: flex;
   flex-direction: column;
@@ -191,9 +174,13 @@ main section {
 
 .project span {
   display: inline-block;
-  border: solid 1px rgba(0, 0, 0, 0.199);
-  padding: 3px;
+  border: solid 1px rgba(13, 37, 117, 0.425);
+  border-radius: 3px;
+  font-weight: bold;
+  padding: 5px 8px;
   margin: 3px 3px;
+  font-size: 12px;
+  cursor: default;
 }
 
 .project .buttons {
@@ -251,9 +238,7 @@ main section {
 .tools span {
   width: fit-content;
 }
-/*      END projects      */
 
-/*      CONTACT      */
 #contact {
   display: flex;
   flex-direction: column;
@@ -302,7 +287,6 @@ main section {
   border-radius: 5px;
   background-color: rgb(13, 37, 117);
   color: white;
-  /* font-size: 14px; */
   letter-spacing: 1px;
   cursor: pointer;
 }
@@ -351,9 +335,7 @@ div.footer a {
 div.footer a:visited {
   color: rgb(13, 37, 117);
 }
-/*      END CONTACT     */
 
-/*      FOOTER      */
 footer {
   display: flex;
   justify-content: center;
@@ -361,13 +343,10 @@ footer {
   height: 30px;
   background-color: rgba(192, 196, 209, 0.541);
   margin-top: 30px;
-  /* font-size: 16px; */
   color: rgb(5, 5, 73);
   font-weight: bold;
 }
-/*      END FOOTER      */
 
-/*      HERO IMAGE      */   
 .masthead {
   display: flex;
   justify-content: flex-end;
@@ -394,27 +373,22 @@ footer {
   margin-bottom: 10vh;
   padding-right: 10px;
 }
-/*      END HERO IMAGE      */
-
 
 @media only screen and (min-width: 350px) {
-  /*      HEADER      */
-    header a {
-      font-size: 4.2vw;
-    }
+  header a {
+    font-size: 4.2vw;
+  }
 
-    header a span {
-      display: inline-block;
-    }
+  header a span {
+    display: inline-block;
+  }
 
-    header nav ul {
-      padding: 0 10px;
-    }
-  /*      END OF HEADER      */
+  header nav ul {
+    padding: 0 10px;
+  }
 }
 
 @media only screen and (min-width: 500px) {
-  /*      HEADER      */
   header {
     min-height: 125px;
   }
@@ -426,18 +400,13 @@ footer {
   header a {
     font-size: 2.5vh;
   }
-  /*      HEADER      */
-
-  /*      HERO IMAGE      */
   .masthead {
     height: 75vh;
   }
-  /*      END OF HERO IMAGE      */
 
 }
 
 @media only screen and (min-width: 768px) {
-  /*      GLOBAL      */
   section:not(section.masthead) {
     align-self: center;
   }
@@ -446,9 +415,6 @@ footer {
     margin-top: 50px;
     margin-bottom: 35px;
   }
-  /*      END GLOBAL      */
-
-  /*      HERO IMAGE      */
     .masthead {
       padding: 0 8vw;
     }
@@ -456,9 +422,7 @@ footer {
     .masthead h2 {
       font-size: 24px;
     }
-  /*      END HERO IMAGE      */
 
-  /*      HEADER      */
   header {
     flex-direction: row;
     justify-content: space-between;
@@ -483,31 +447,23 @@ footer {
   header a {
     font-size: 2.5vmin;
   }
-  /*      END HEADER      */
-
-  /*      SKILLS      */
+  
   #skills {
     display: flex;
     justify-content: center;
   }
-  /*      END SKILLS      */
 
-  /*      CONTACT      */
   iframe {
     height: 500px;
     margin-top: 25px;
   }
-  /*      END OF CONTACT      */
 }
 
 @media only screen and (min-width: 1000px) {
-  /*      HEADER      */
     header nav {
       margin-top: 15px;
     }
-  /*      END OF HEADER      */
 
-  /*      PROJECT      */
   .project {
     flex-direction: row;
     align-items: center;
@@ -551,32 +507,27 @@ footer {
   .project a img {
     min-height: 350px;
   }
-  /*      END OF PROJECT      */
 
-  /*      HERO IMAGE      */
     .masthead h2 {
       font-size: 4vmin;
     }
-  /*      END OF HERO IMAGE      */
 
 }
 
 @media only screen and (min-width: 1200px) {
-    /*      ABOUT ME      */
-    .about-me {
-      flex-direction: row-reverse;
-      align-items: center;
-      justify-content: space-between;
-    }
-  
-    .about-me img {
-      display: inline-block;
-      max-width: 375px;
-      min-width: 325px;
-    }
-  
-    .info {
-      margin-right: 75px;
-    }
-    /*      END ABOUT ME      */
+  .about-me {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .about-me img {
+    display: inline-block;
+    max-width: 375px;
+    min-width: 325px;
+  }
+
+  .info {
+    margin-right: 75px;
+  }
 }
