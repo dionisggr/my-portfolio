@@ -46,7 +46,7 @@ header {
 header h1 {
   font-size: 7vw;
   margin: 0;
-  color: rgb(13, 37, 117);
+  color: rgb(0, 60, 138);  
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -67,7 +67,7 @@ header nav ul {
 
 header a {
   text-decoration: none;
-  color: rgb(13, 37, 117);
+  color: rgb(0, 60, 138);  
   font-weight: bolder;
   font-size: 24px;
 }
@@ -124,14 +124,6 @@ main section {
   width: 100%;
 } 
 
-#projects h2 {
-  margin-bottom: 50px;
-}
-
-#projects img {
-  width: 100%;
-}
-
 #skills {
   display: flex;
   flex-wrap: wrap;
@@ -161,6 +153,15 @@ main section {
   flex-direction: column;
 }
 
+#projects h2 {
+  margin-bottom: 50px;
+}
+
+#projects img {
+  /* min-width: 100%; */
+  /* max-width: 100%; */
+}
+
 .project {
   display: flex;
   flex-direction: column;
@@ -169,7 +170,7 @@ main section {
 }
 
 .project + .project {
-  margin-top: 75px;
+  margin-top: 5vmax;
 }
 
 .project span {
@@ -195,7 +196,7 @@ main section {
   align-items: center;
   width: 100px;
   height: 2.8em;
-  background-color: rgb(2, 48, 199);
+  background-color: rgb(0, 60, 138);  
   border-width: 1px;
   border-radius: 3px;
   outline: none;
@@ -217,7 +218,7 @@ main section {
 .project img {
   border-radius: 5px;
   border: solid 1px rgba(2, 48, 199, 0.274);
-
+  max-width: 100%;
 }
 
 .project i {
@@ -285,7 +286,7 @@ main section {
   align-self: center;
   border: solid 1px rgba(0, 0, 0, 0.582);
   border-radius: 5px;
-  background-color: rgb(13, 37, 117);
+  background-color: rgb(0, 60, 138);  
   color: white;
   letter-spacing: 1px;
   cursor: pointer;
@@ -318,10 +319,10 @@ div.footer {
   justify-content: space-around;
   margin-top: 50px;
   font-size: 40px;
-  color: rgb(13, 37, 117);
   width: 100%;
   max-width: 300px;
   margin-bottom: 25px;
+  color: rgb(0, 60, 138);  
 }
 
 div.footer i + i {
@@ -329,11 +330,11 @@ div.footer i + i {
 } 
 
 div.footer a {
-  color: rgb(13, 37, 117);
+  color: rgb(0, 60, 138);  
 
 }
 div.footer a:visited {
-  color: rgb(13, 37, 117);
+  color: rgb(0, 60, 138);  
 }
 
 footer {
@@ -343,7 +344,7 @@ footer {
   height: 30px;
   background-color: rgba(192, 196, 209, 0.541);
   margin-top: 30px;
-  color: rgb(5, 5, 73);
+  color: rgb(3, 40, 160);
   font-weight: bold;
 }
 
@@ -460,9 +461,9 @@ footer {
 }
 
 @media only screen and (min-width: 1000px) {
-    header nav {
-      margin-top: 15px;
-    }
+  header nav {
+    margin-top: 15px;
+  }
 
   .project {
     flex-direction: row;
@@ -486,7 +487,6 @@ footer {
     box-sizing: border-box;
     flex-wrap: nowrap;
     width: 225px;
-    height: 100px;
   }
 
   .buttons a {
@@ -494,18 +494,19 @@ footer {
     min-height: 50px;
     font-size: 16px;
   }
+  
 
   .project-info {
-    margin-left: 3vw;
-    margin-top: 40px;
+    margin-left: 2vw;
+    min-width: 45%;
+  }
+
+  .project img {
+    /* max-height: 100%; */
   }
 
   .project a:not(.buttons a) {
     height: 275px;
-  }
-
-  .project a img {
-    min-height: 350px;
   }
 
     .masthead h2 {
