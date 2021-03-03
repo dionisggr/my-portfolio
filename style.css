@@ -111,7 +111,7 @@ main section {
 .about-me img {
   display: block;
   width: 80vw;
-  max-width: 350px;
+  max-width: 300px;
   margin-left: auto;
   margin-right: auto;
   border: solid 1px rgba(14, 14, 112, 0.548);
@@ -366,11 +366,12 @@ footer {
   font-weight: bold;
   color: #eee;
   font-size: 4.5vmin;
+  font-size: 6vmin;
   letter-spacing: 0.13em;
   line-height: 1;
   text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8);
   margin-bottom: 10vh;
-  padding-right: 20vw;
+  padding-right: 8vw;
 }
 
 .masthead h2 span {
@@ -553,8 +554,6 @@ footer {
 
   .about-me img {
     display: inline-block;
-    max-width: 375px;
-    min-width: 325px;
   }
 
   .info {
