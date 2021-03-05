@@ -1,6 +1,6 @@
 This favicon was generated using the following font:
 
-- Font Title: Julee
-- Font Author: Copyright (c) 2011, Julian Tunni (jotadejulian@hotmail.com), with Reserved Font Name "Julee"
-- Font Source: https://fonts.gstatic.com/s/julee/v10/TuGfUVB3RpZPQ6ZLodgzydtk.ttf
-- Font License: SIL Open Font License, 1.1 (https://scripts.sil.org/OFL)
+- Font Title: Dhurjati
+- Font Author: Copyright (c) 2012 Andhrapradesh Society for Knowledge Networks (fonts.siliconandhra.org). Copyright (c) 2014 Google, Inc.
+- Font Source: http://fonts.gstatic.com/s/dhurjati/v8/_6_8ED3gSeatXfFiFX3ySKQtuTA2.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL)
