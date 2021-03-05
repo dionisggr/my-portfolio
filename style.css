@@ -554,6 +554,7 @@ footer {
 
   .about-me img {
     display: inline-block;
+    margin-bottom: 0;
   }
 
   .info {
